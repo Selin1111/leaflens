@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantain Leaf Disease Detection - Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('banana-leaf.jpg'); /* Add your banana leaf background image here */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the image */
+            margin: 0;
+            padding: 0;
+            color: black; /* Black text color */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent header background */
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background for content */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Allows the section to expand and fill the available space */
+        }
+
+        h1 {
+            color: black;
+        }
+
+        .upload-btn {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .upload-btn:hover {
+            background-color: darkgreen;
+        }
+
+        label {
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .upload-section {
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent footer background */
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Plantain Leaf Disease Detection</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>This project uses machine learning to detect diseases in plantain leaves. Upload an image of a plantain leaf to get started and diagnose potential issues.</p>
+    </section>
+
+    <section class="upload-section">
+        <h2>Upload Plantain Leaf Image</h2>
+        <form action="disease.html" method="GET"> <!-- Redirects to second page -->
+            <label for="file-upload" class="upload-btn">Choose File</label>
+            <input type="file" id="file-upload" accept="image/*">
+            <br>
+            <button type="submit" class="upload-btn">Analyze Image</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Group11</p>
+    </footer>
+</body>
+</html>
